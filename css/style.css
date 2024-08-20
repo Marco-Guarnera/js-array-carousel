@@ -1,0 +1,53 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Generics */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Utilities */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+/* Carousel */
+#carousel {
+    height: 500px;
+    width: 750px;
+    margin: 25px auto;
+    position: relative;
+}
+
+#carousel img {
+    display: none;
+}
+
+#carousel img.active {
+    display: block;
+}
+
+#carousel i {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carousel i:hover {
+    opacity: 0.5;
+}
+
+#prev {
+    left: -75px;
+}
+
+#next {
+    right: -75px;
+}
